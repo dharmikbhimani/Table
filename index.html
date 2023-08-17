@@ -1,10 +1,160 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Table Webpage</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+    <h1 style="text-align: center;">This is a Table Tutorial</h1>
+    <p> &lt;tr&gt;= Table Row </p>
+    <p> &lt;th&gt;= Table Header </p>
+    <p> &lt;td&gt;= Table Data </p>
+    <p><strong>Click</strong> on button to show the table</p>
+    <button id="showTableBtn1" class="tablebtn">Show Table 1</button>
+    <button id="showTableBtn2" class="tablebtn">Show Table 2</button><br><br>
+    <button id="hideTableBtn">Hide Tables</button>
+
+
+
+
+    <div id="tableContainer1"  style="display: none;">
+
+        <table style="width: 100%;" class="table1">
+            <thead class="thead1">Table 1</thead>
+            <tr>
+                <th style="width: 30%;" class="table1 , name, sub1">Name</th>
+                <th class="table1 , sub1">Hindi</th>
+                <th class="table1 , sub1">English</th>
+                <th class="table1 , sub1">Maths</th>
+                <th class="table1 , sub1">Social Science</th>
+                <th class="table1 , sub1">Science</th>
+            </tr>
+            <tr>
+                <td class="table1 , name">Aman</td>
+                <td class="table1 , mark1">85</td>
+                <td class="table1 , mark1">79</td>
+                <td class="table1 , mark1">81</td>
+                <td class="table1 , mark1">88</td>
+                <td class="table1 , mark1">82</td>
+            </tr>
+            <tr>
+                <td class="table1 , name">Bhavesh</td>
+                <td class="table1 , mark1">75</td>
+                <td class="table1 , mark1">89</td>
+                <td class="table1 , mark1">91</td>
+                <td class="table1 , mark1">78</td>
+                <td class="table1 , mark1">92</td>
+            </tr>
+            <tr>
+                <td class=" table1 , name">Dhruv</td>
+                <td class="table1 , mark1">78</td>
+                <td class="table1 , mark1">82</td>
+                <td class="table1 , mark1">85</td>
+                <td class="table1 , mark1">84</td>
+                <td class="table1 , mark1">89</td>
+            </tr>
+            <tr>
+                <td class="table1 , name">Harsh</td>
+                <td class="table1 , mark1">88</td>
+                <td class="table1 , mark1">86</td>
+                <td class="table1 , mark1">84</td>
+                <td class="table1 , mark1">82</td>
+                <td class="table1 , mark1">86</td>
+            </tr>
+            <tr>
+                <td class="table1 , name">Kartik</td>
+                <td class="table1 , mark1">85</td>
+                <td class="table1 , mark1">89</td>
+                <td class="table1 , mark1">91</td>
+                <td class="table1 , mark1">78</td>
+                <td class="table1 , mark1">88</td>
+            </tr>
+        </table>
+    </div>
+
+    <br><br><br><br><br>
+    <div id="tableContainer2"  style="display: none;">
+        <h3>Here is a table with round border property :</h3>
+        <table style="width: 100%;" class="table2">
+            <thead class="thead2">Table 2</thead>
+            <tr>
+                <th style="width: 30%;" class="name2 , sub2 , table2 ">Name</th>
+                <th class="name2 , sub2 , table2">Hindi</th>
+                <th class="name2 , sub2 , table2">English</th>
+                <th class="name2 , sub2 , table2">Maths</th>
+                <th class="name2 , sub2 , table2">Social Science</th>
+                <th class="name2 , sub2 , table2">Science</th>
+            </tr>
+            <tr>
+                <td class="name2">Aman</td>
+                <td class="name2 , mark2">85</td>
+                <td class="name2 , mark2">79</td>
+                <td class="name2 , mark2">81</td>
+                <td class="name2 , mark2">88</td>
+                <td class="name2 , mark2">82</td>
+            </tr>
+            <tr>
+                <td class="name2 ">Bhavesh</td>
+                <td class="name2 , mark2">75</td>
+                <td class="name2 , mark2">89</td>
+                <td class="name2 , mark2">91</td>
+                <td class="name2 , mark2">78</td>
+                <td class="name2 , mark2">92</td>
+            </tr>
+            <tr>
+                <td class="name2">Dhruv</td>
+                <td class="name2 , mark2">78</td>
+                <td class="name2 , mark2">82</td>
+                <td class="name2 , mark2">85</td>
+                <td class="name2 , mark2">84</td>
+                <td class="name2 , mark2">89</td>
+            </tr>
+            <tr>
+                <td class="name2">Harsh</td>
+                <td class="name2 , mark2">88</td>
+                <td class="name2 , mark2">86</td>
+                <td class="name2 , mark2">84</td>
+                <td class="name2 , mark2">82</td>
+                <td class="name2 , mark2">86</td>
+            </tr>
+            <tr>
+                <td class="name2">Kartik</td>
+                <td class="name2 , mark2">85</td>
+                <td class="name2 , mark2">89</td>
+                <td class="name2 , mark2">91</td>
+                <td class="name2 , mark2">78</td>
+                <td class="name2 , mark2">88</td>
+            </tr>
+        </table>
+    </div>
+
+
+
+    <script>
+
+        const showTableBtn1 = document.getElementById("showTableBtn1");
+        const showTableBtn2 = document.getElementById("showTableBtn2")
+        const tableContainer1 = document.getElementById("tableContainer1");
+        const tableContainer2 = document.getElementById("tableContainer2");
+        const hideTableBtn = document.getElementById("hideTableBtn")
+
+        showTableBtn1.addEventListener("click", () => {
+            tableContainer1.style.display = "block";
+        });
+
+        showTableBtn2.addEventListener("click", () => {
+            tableContainer2.style.display = "block";
+        })
+
+        hideTableBtn.addEventListener("click", ()=>{
+            tableContainer1.style.display = "none";
+            tableContainer2.style.display = "none";
+        })
+
+    </script>
 </body>
+
 </html>
