@@ -1,36 +1,45 @@
 /* its the First Table */
-
-.table1{
+/* .tr:nth-child(even){
+    background-color: #b15656;
+} */
+.table1,.thead1{
     text-align: center;
     border: 2px solid rgb(154, 108, 108);
     border-collapse:collapse;
     border-style:dotted;
+    margin-top: 20px;
 }
+
 .sub1{
     background-color:aquamarine;
-}
-.mark1{
+} 
+
+.mark1:nth-child(even){
     background-color:beige;
 }
 
     
-.name{
+.name, .thead1{
     background-color:rgb(159, 231, 241);
 }
 .sub1{
     color: red;
+
 }
+/* .thead1{
+    border: 2px;
+} */
 /* .dtable{
     display: none;
 } */
 
 
 /* second table */
-.thead2{
+/* .thead2{
     text-align: center;
     border: 2px solid black;
-}
-.name2{
+} */
+.name2 , .thead2{
     background-color:rgb(159, 231, 241);
     border: 2px solid rgb(154, 108, 108);
     border-radius: 15px;
